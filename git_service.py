@@ -3,11 +3,11 @@ from git import Repo
 import json
 
 class GitService:
-    branch = 'develop'
 
     with open('git_config.json') as f:
         config = json.load(f)
 
+    branch = config['branch']
     repositories = config['repositories']
 
     def init(self):

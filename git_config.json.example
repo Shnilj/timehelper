@@ -1,4 +1,5 @@
 {
+  "branch": "develop",
   "repositories": [
     "./../campus",
     "./../polpo-api",
