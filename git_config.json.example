@@ -1,0 +1,8 @@
+{
+  "repositories": [
+    "./../campus",
+    "./../polpo-api",
+    "./../auteurstool_9",
+    "./../ludo"
+  ]
+}
