@@ -1,5 +1,6 @@
 import argparse
 import datetime
+import os
 from colorama import Fore
 from git_service import GitService
 from devops import DevOpsService
@@ -23,7 +24,7 @@ def main():
         return DevOpsService().get_recent_activity_data()
 
     git_service = GitService()
-    author_name = "Jens Descamps"  # replace with the name you use for git commits
+    author_name = os.environ['AUTHOR_NAME'] # replace with the name you use for git commits
     commit_dict = git_service.get_commits_for_date(date_to_check, author_name)
     for repo, commits in commit_dict.items():
         print(f'Repository: {repo}')
