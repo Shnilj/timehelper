@@ -34,5 +34,7 @@ def main():
             print(('-' * 50))  # print line of dashes after each commit
             print()  # print empty line
 
+    print(Fore.RESET)
+
 if __name__ == '__main__':
     main()
