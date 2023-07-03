@@ -79,3 +79,4 @@ class DevOpsService:
             table.append(SEPARATING_LINE)
 
         print(tabulate(table, headers=['State', 'Date', 'Title & Url', 'Assignee'], tablefmt='orgtbl'))
+        print(Fore.RESET)
