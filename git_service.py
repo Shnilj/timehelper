@@ -43,7 +43,7 @@ class GitService:
                                     'hash': commit.hexsha,
                                     'message': commit.message,
                                     'time': commit_datetime.strftime('%d/%m/%Y %H:%M:%S'),
-                                    'branch': commit.repo.active_branch.name
+                                    'branch': branch
                                 }
 
         # for repository in commit_dict:
